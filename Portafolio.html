@@ -17,47 +17,69 @@
     />
   </head>
   <body>
-    <header class="container-header">
-      <div class="container-nav">
-        <a href="./index.html" class="logo-inicio">WebStudio</a>
-        <nav>
-          <ul class="site-nav">
-            <li><a href="./index.html" class="site-nav">Estudio</a></li>
-            <li><a href="#" class="site-nav current">Portafolio</a></li>
-            <li><a href="#" class="site-nav">Contactos</a></li>
-          </ul>
-        </nav>
-        <ul class="contacts-nav">
-          <li>
-            <a href="mailto:info@devstudio.com" class="contact-links"> info@devstudio.com</a>
+    <header class="container-header border-bottom">
+      <nav class="container navigation__container">
+        <ul class="list pv-main m-0">
+          <li class="container-logo">
+            <a href="./index.html" class="header-logo link current">
+              <span class="logo-blue"> WebStudio</span>
+            </a>
           </li>
-          <li><a href="tel:+525555296000" class="contact-links"> +52 55 5529 6000</a></li>
         </ul>
-      </div>
+        <ul class="hero__navegation pv-main pv-navigavion m-0">
+          <li>
+            <a href="./index.html" class="link"> Estudio</a>
+          </li>
+          <li>
+            <a href="./Portafolio.html" class="header-menu current link">Portafolio</a>
+          </li>
+          <li>
+            <a href="#" class="link">Contacto</a>
+          </li>
+        </ul>
+        <ul class="hero__contact list pv-contacts m-0">
+          <li class="header-email link">
+            <svg class="icon-sobre header-email link">
+              <use href="./Images/icons/symbol-defs.svg#icon-sobre"></use>
+            </svg>
+            <a class="header-email gap-email link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="p-0 header-tel">
+            <svg class="icon-tel header-tel link">
+              <use href="./Images/icons/symbol-defs.svg#icon-telefono"></use>
+            </svg>
+            <a class="header-tel gap-tel link" href="tel:+525555296000">+52 55 5529 6000</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
       <ul class="botones-portafolio">
         <li>
-          <button type="button" class="boton-top-portafolio">Todo</button>
+          <button type="button" class="boton-top-portafolio boton-Todo">Todo</button>
         </li>
         <li>
-          <button type="button" class="boton-top-portafolio">Sitios-web</button>
+          <button type="button" class="boton-top-portafolio boton-Sitios-web">Sitios-web</button>
         </li>
         <li>
-          <button type="button" class="boton-top-portafolio">Aplicaciones</button>
+          <button type="button" class="boton-top-portafolio boton-Aplicaciones">
+            Aplicaciones
+          </button>
         </li>
         <li>
-          <button type="button" class="boton-top-portafolio">Diseño</button>
+          <button type="button" class="boton-top-portafolio boton-Diseño">Diseño</button>
         </li>
         <li>
-          <button type="button" class="boton-top-portafolio">Marketing</button>
+          <button type="button" class="boton-top-portafolio boton-Marketing">Marketing</button>
         </li>
       </ul>
       <section id="portafolio__Productos" class="container-images-portafolio">
         <div class="container-cards-position">
           <ul class="crads-order-portfolio container">
             <li class="card-portafolio">
-              <img src="./Images/Tecnoduck.jpg" alt="Tecnoduck" width="370" />
+              <img src="./Images/Tecnoduck.jpg" alt="Tecnoduck" width="auto" />
               <h3 class="nombre-de-producto">Tecnoduck</h3>
               <p class="categoria">Sitio-web</p>
             </li>
@@ -121,28 +143,54 @@
         </div>
       </section>
     </main>
-    <footer id="contacts-footer-portfolio" class="footer-container">
-      <div class="footer">
-        <a href="#" class="logo-footer">WebStudio</a>
-        <address>
-          <div class="container-contact">
-            <ul>
-              <li>
-                <a href="#" class="direccion">Calz. Ticomán 500, Ciudad de México, CDMX, México</a>
-              </li>
-              <li>
-                <a class="email-footer" href="mailto:info@example.com"> info@example.com</a>
-              </li>
-              <li><a class="tel-footer" href="tel:+525555296000"> +52 55 5529 6000</a></li>
-            </ul>
-          </div>
-        </address>
-      </div>
-      <ul class="redes-properties">
-        <li>
-          <p class="texto-redes">ENCUENTRENOS EN</p>
-        </li>
-      </ul>
+    <footer id="contacts-footer" class="footer-container">
+      <address class="footer">
+        <div class="container-contact">
+          <a href="#" class="logo-footer">WebStudio</a>
+          <ul>
+            <li>
+              <a href="#" class="direccion">Calz. Ticomán 500, Ciudad de México, CDMX, México</a>
+            </li>
+            <li>
+              <a class="email-footer" href="mailto:info@example.com"> info@example.com</a>
+            </li>
+            <li><a class="tel-footer" href="tel:+525555296000"> +52 55 5529 6000</a></li>
+          </ul>
+        </div>
+        <div class="redes-footer-container">
+          <h2 class="redes-footer-title">encuentrenos en</h2>
+          <ul class="icons-list-footer p-0">
+            <li class="icon-item-footer">
+              <a href="" class="icon-item-footer">
+                <svg class="social-media-icons-cards-footer">
+                  <use href="./Images/icons/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="icon-item-footer">
+              <a href="" class="icon-item-footer"
+                ><svg class="social-media-icons-cards-footer">
+                  <use href="./Images/icons/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="icon-item-footer">
+              <a href="" class="icon-item-footer"
+                ><svg class="social-media-icons-cards-footer">
+                  <use href="./Images/icons/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="icon-item-footer">
+              <a href="" class="icon-item-footer"
+                ><svg class="social-media-icons-cards-footer">
+                  <use href="./Images/icons/symbol-defs.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </address>
     </footer>
   </body>
 </html>
