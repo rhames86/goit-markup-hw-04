@@ -84,7 +84,7 @@ ul {
   cursor: pointer;
 }
 .link {
-  color: #212121;
+  color: #757575;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   font-weight: 500;
@@ -97,6 +97,22 @@ ul {
   color: var(--blue);
 }
 .link:focus {
+  color: var(--blue);
+}
+.link-nav {
+  color: #212121;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.17em;
+  letter-spacing: 0.02em;
+  text-align: left;
+  cursor: pointer;
+}
+.link-nav:hover {
+  color: var(--blue);
+}
+.link-nav:focus {
   color: var(--blue);
 }
 .header-logo {
@@ -589,11 +605,11 @@ ul {
 .clients-icon-p {
   padding: 14px 40px;
 }
-.link {
+.link-clientes {
   fill: var(--border-icon);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
-.link:hover {
+.link-clientes:hover {
   fill: var(--blue-text);
 }
 
