@@ -6,6 +6,15 @@ a:active {
 :root {
   --blue: #2196f3;
   --black: #212121;
+  --blue-text: rgb(33, 150, 243, 1);
+  --background-card: rgb(33, 150, 243, 0.9);
+  --dominant-color: rgb(33, 33, 33, 1);
+  --white-font: rgb(255, 255, 255, 1);
+  --background-title: rgb(47, 48, 58, 1);
+  --background-sub-title: rgb(47, 48, 58, 0.8);
+  --paragraph-color: rgb(117, 117, 117, 1);
+  --second-background: rgba(245, 244, 250, 1);
+  --border-icon: rgba(175, 177, 184, 1);
 }
 .outline {
   outline: none;
@@ -527,89 +536,67 @@ ul {
   color: #757575;
   text-align: center;
 }
+
 /* aqui comienza el codigo seccion cliente */
-.container-clientes {
-  width: auto;
-  justify-content: center;
-  background-color: #ffffff;
-  flex-basis: content;
-  padding-top: 59px;
+.section {
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+.container-clients {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
   padding-bottom: 151px;
+  margin: auto;
 }
-.p-clientes {
-  margin: 0%;
-}
-.container-icons-clientes {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-  background-color: #ffffff;
-}
-.estilo-clientes-titulo {
-  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+.clients-title {
+  font-weight: 700;
   font-size: 36px;
-  letter-spacing: 3%;
-  color: #212121;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
   text-align: center;
-  padding-bottom: 44px;
 }
-.icon-cliente1 {
-  fill: #afb1b8;
-  width: 41px;
-  height: 46.7px;
+.clients-list {
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  padding-top: 44px;
 }
-.icon-cliente2 {
-  fill: #afb1b8;
-  width: 40px;
-  height: 52px;
-}
-.icon-cliente3 {
-  fill: #afb1b8;
-  width: 43px;
-  height: 41px;
-}
-.icon-cliente4 {
-  fill: #afb1b8;
-  width: 84px;
-  height: 41px;
-}
-.icon-cliente5 {
-  fill: #afb1b8;
-  width: 63px;
-  height: 45px;
-}
-.icon-cliente6 {
-  fill: #afb1b8;
-  width: 94px;
-  height: 44px;
-}
-.icon-hover:hover,
-.icon-hover:focus {
-  fill: #2196f3;
-  transition: 0.3s;
-  outline: none;
-}
-.recuadro-exterior {
+.clients-item {
   width: 170px;
   height: 81px;
-  justify-items: center;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--border-icon);
+  fill: var(--border-icon);
   border-radius: 4px;
   display: flex;
-  background-color: #ffffff;
+  justify-content: center;
+  align-items: center;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
-.recuadro-exterior:hover,
-.recuadro-exterior:focus {
-  border: 1px solid #2196f3;
-  border-radius: 4px;
-  background-color: #ffffff;
-  transition: 0.3s;
-  outline: none;
+.clients-item:hover {
+  border-color: var(--blue-text);
+  fill: var(--blue-text);
+  cursor: pointer;
 }
+.clients-icon-left {
+  padding: 21px 60px;
+}
+.clients-icon-p {
+  padding: 14px 40px;
+}
+.link {
+  fill: var(--border-icon);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+.link:hover {
+  fill: var(--blue-text);
+}
+
 /* final codigo seccion clientes */
 
 .logo-footer {
